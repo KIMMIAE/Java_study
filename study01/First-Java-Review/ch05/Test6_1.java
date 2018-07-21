@@ -9,7 +9,7 @@ class Test6_1{
 
             count++;
             System.out.println(num);
-        }
+        } 
             System.out.println("count : " +count);
 
     }
