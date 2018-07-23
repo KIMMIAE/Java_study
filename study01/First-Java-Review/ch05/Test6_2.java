@@ -3,17 +3,25 @@
 반복문을 while문+무한루프 사용할 것.*/
 class Test6_2{
     public static void main(String[] args){
-     int count=0;
-
-        for(int num=1; num<=100; num++){
-            if(num%5!=0 || num%7!=0)            
-            continue;
-            
-
-            count++;
-            System.out.println(num);
-        } 
-            System.out.println("count : " +count);
-
+     
+     int sum = 0;
+     int num = 1;
+     while(true)
+     {
+        if(num%2 != 0){
+             sum+=num;
+         }
+         else{
+             if(num%3==0)
+             sum+=num;
+             }
+         if(num>1000)
+         {
+             System.out.println(num+"더할 때 1000을 넘는다");
+             System.out.println("초과된 값 : "+sum);
+             break;
+         }
+         num++;
+     }
     }
 }
