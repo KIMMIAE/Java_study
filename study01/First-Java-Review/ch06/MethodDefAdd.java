@@ -7,5 +7,8 @@ class MethodDefAdd{
 
     }
 
-    public static
+    public static void hiEveryone(int age){
+        System.out.println("좋은 아침입니다.");
+        System.out.println("제 나이는 "+ age + "입니다.");
+    }
 }
